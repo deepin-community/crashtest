@@ -1,5 +1,48 @@
-template-repository (1.0-1) unstable; urgency=medium
+crashtest (0.4.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version.
+  * d/control: Bump Standards-Version to 4.6.2 (from 4.6.1.1; no further
+    changes needed).
+  * d/watch: Remove uupdate command from the file.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Tue, 03 Jan 2023 21:18:47 +0000
+
+crashtest (0.4.0-1) unstable; urgency=medium
+
+  * New upstream version.
+  * d/control: Add <!nocheck> profile to python3-pytest Build Dependency that
+    used for tests.
+    - wrap-and-sort.
+  * d/control: Bump Standards-Version to 4.6.1.1 (from 4.6.0; no further
+    changes needed).
+  * d/control: Remove trivial autopkgtest-pkg-python.
+  * d/copyright: Update Copyright year for debian/* files.
+  * d/control: Build with pybuild's pyproject plugin. Add
+    pybuild-plugin-pyproject and python3-poetry-core as Build Depends.
+    - d/control: Remove dh_python as Build Depends.
+  * d/patches: Remove patches setup.py is not longer needed.
+
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Thu, 01 Sep 2022 13:38:27 +0000
+
+crashtest (0.3.1-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 25 May 2022 21:34:55 +0100
+
+crashtest (0.3.1-2) unstable; urgency=medium
+
+  [ Emmanuel Arias ]
+  * d/test/control: Depends on python3-all
+
+  [ Jonathan Carter ]
+  * Initial source-only upload
+
+ -- Jonathan Carter <jcc@debian.org>  Fri, 05 Feb 2021 12:05:53 +0200
+
+crashtest (0.3.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #977917)
+
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Tue, 22 Dec 2020 18:17:01 -0300
